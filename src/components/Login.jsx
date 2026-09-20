@@ -51,7 +51,7 @@ function Login({ onLoginSuccess }) {
                         </div>
                     )}
 
-                    <form onSubmit={handleSubmit} className="flex flex-col gap-5 max-w-sm mx-auto w-full">
+                    <form onSubmit={handleSubmit} className="flex flex-col gap-5 max-w-sm mx-auto w-full" autoComplete="off">
                         <div>
                             <div className="relative group">
                                 <input
@@ -61,6 +61,7 @@ function Login({ onLoginSuccess }) {
                                     className="w-full pl-12 pr-4 py-4 rounded-2xl border border-amber-900/10 bg-white/70 focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/40 transition-all shadow-sm font-medium placeholder-amber-900/30"
                                     placeholder="Username"
                                     required
+                                    autoComplete="off"
                                 />
                                 <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-amber-900/30 group-focus-within:text-amber-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                             </div>
@@ -75,6 +76,7 @@ function Login({ onLoginSuccess }) {
                                     className="w-full pl-12 pr-12 py-4 rounded-2xl border border-amber-900/10 bg-white/70 focus:bg-white focus:outline-none focus:ring-2 focus:ring-amber-500/40 focus:border-amber-500/40 transition-all shadow-sm font-medium placeholder-amber-900/30"
                                     placeholder="Password"
                                     required
+                                    autoComplete="new-password"
                                 />
                                 <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-amber-900/30 group-focus-within:text-amber-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                                 
