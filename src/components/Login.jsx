@@ -152,6 +152,7 @@ function Login({ onLoginSuccess }) {
 
                                 <input
                                     type="text"
+                                    name="username"
                                     value={username}
                                     onChange={(e) => setUsername(e.target.value)}
                                     placeholder="Enter your username"
@@ -214,11 +215,12 @@ function Login({ onLoginSuccess }) {
 
                                 <input
                                     type={showPassword ? "text" : "password"}
+                                    name="password"
                                     value={password}
                                     onChange={(e) => setPassword(e.target.value)}
                                     placeholder="Enter your password"
                                     required
-                                    autoComplete="off"
+                                    autoComplete="current-password"
                                     className="
                                         w-full
                                         h-12
