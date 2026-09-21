@@ -156,7 +156,7 @@ function Login({ onLoginSuccess }) {
                                     onChange={(e) => setUsername(e.target.value)}
                                     placeholder="Enter your username"
                                     required
-                                    autoComplete="username"
+                                    autoComplete="off"
                                     className="
                                         w-full
                                         h-12
@@ -218,7 +218,7 @@ function Login({ onLoginSuccess }) {
                                     onChange={(e) => setPassword(e.target.value)}
                                     placeholder="Enter your password"
                                     required
-                                    autoComplete="current-password"
+                                    autoComplete="off"
                                     className="
                                         w-full
                                         h-12
